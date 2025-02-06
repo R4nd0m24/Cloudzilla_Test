@@ -1,6 +1,6 @@
-def main():
-  print("Hello, world!")
+from flask import Flask
+app = Flask(__name__)
 
-
-if __name__ == "__main__":
-  main()
+@app.route("/")
+def hello():
+    return "Hello World!"
